@@ -1,0 +1,19 @@
+<table>
+  <tr>
+    <td>Пароль: </td>
+    <td><%= @user.password %></td>
+  </tr>
+  <tr>
+    <td>Секретне слово: </td>
+    <td><%= "--#{@user.password}--car" %></td>
+  </tr>
+  <tr>
+    <td>Захешований пароль: </td>
+    <td><%= @user.encrypted_password %></td>
+  </tr>
+  <tr>
+    <td>Домішка: </td>
+    <td><%= @user.salt %></td>
+  </tr>
+</table>
+
